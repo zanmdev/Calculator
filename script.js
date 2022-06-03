@@ -49,7 +49,8 @@ function multiply(num1,num2){
 function divide(num1,num2){
     
     if(num2==0){
-      return console.log(":^)");
+      display.textContent = ":^)";
+      screenReset = true;
     }
     let result = Number(num1)/Number(num2);
     
@@ -134,4 +135,6 @@ function clearDisplay(){
     
     display.textContent="0";
     displayNum="";
+    numbers = [];
+
 }
